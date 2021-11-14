@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Chart from './components/Chart';
+import Chart from './components/Charts';
 
 class App extends Component {
   constructor(){
@@ -50,10 +49,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
         <Chart chartData={this.state.chartData} location="Massachusetts" legendPosition="bottom"/>
       </div>
     );
